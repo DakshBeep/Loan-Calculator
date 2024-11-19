@@ -88,7 +88,7 @@ def main():
         print("Incorrect parameters")
         sys.exit(1)
     
-    interest = float(args.interest) / (12 * 100)  # concert to monthly interest
+    interest = float(args.interest) / (12 * 100)  # convert to monthly interest
     
     if args.type == "diff":
         calculate_diff_payments(args.principal, args.periods, interest)
